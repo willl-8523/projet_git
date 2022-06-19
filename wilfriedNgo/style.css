@@ -1,0 +1,137 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    /* min-width: 500px; */
+}
+
+nav {
+    width: 100%;
+    background-color: #bada55;
+    margin: 0;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.411);
+}
+
+a:hover {
+    color: black;
+}
+
+form {
+    width: 40%;
+    margin: 100px auto 10px auto;
+    padding: 15px 0;
+    border-radius: 8px;
+    box-shadow: -6px -5px 8px -4px rgba(187, 218, 85, 0.658), 6px 5px 8px -4px rgba(187, 218, 85, 0.658);
+}
+h3 {
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-family: cursive;
+}
+label {
+    color: rgba(0, 0, 0, 0.4);
+    font-family: cursive;
+    /* background-color: blue; */
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    margin-top: 5px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.formulaire {
+    width: 30%;
+    margin: auto;
+}
+
+.envoyer {
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.envoyer:hover {
+    background-color: #bada55;
+    border-color: #bada55;
+    color: rgba(0, 0, 0, 0.4);
+    transition-duration: .5s;
+}
+
+.contact {
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.411);
+}
+
+.icon {
+    margin: 50px;
+}
+
+i {
+    margin: 10px;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+    /* body {
+        background-color: aquamarine;
+    } */
+
+    nav {
+        /* background-color: blue; */
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 90%;
+    }
+    label {
+        font-size: .8rem;
+    }
+    .formulaire {
+        width: 80%;
+        margin: auto;
+    }
+
+    input {
+        background-color: transparent;
+    }
+
+    ul {
+        width: 75%;
+    }
+
+    .contact {
+        width: 70%;
+        margin: 20px auto;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Formulaire</title>
+</head>
+<body>
+    <header> 
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">nav1</a></li>
+                <li><a href="#">nav2</a></li>
+                <li><a href="#">nav3</a></li>
+                <li><a href="#">nav4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="">
+        <h3> FORMULAIRE</h3>
+        <div class="formulaire">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" required title="Saisissez votre nom"><br><br>
+            <label for="prenom">Prenom</label>
+            <input type="text" name="prenom" id="prenom" required title="Saisissez votre prenom"><br><br>
+            <label for="naissance">Date de Naisssance</label>
+            <input type="date" name="naissance" id="naissance" min="1900-01-01" max="2021-12-31" required title="Selectionner votre année de naissance"><br><br>
+            <label for="adress">Adresse Postale</label>
+            <input type="text" name="adress" id="adress" required title="Saisissez votre adresse postale"><br><br>
+            <label for="ville">Ville</label>
+            <input type="text" name="ville" id="ville" required title="Saisissez votre ville"><br><br>
+            <label for="postale">Code Postal</label>
+            <input type="text" name="postale" id="postale" pattern="^\d{5}$" required title="Saisissez votre code postal"><br><br>
+            <label for="pays">Pays</label>
+            <input type="text" name="pays" id="pays" required title="Saisissez votre pays"><br><br>
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail" required title="Saisissez votre mail"><br><br>
+            <label for="phone">Telephone</label>
+            <input type="tel" name="phone" id="phone" pattern="^[0]{1}[6-7]{1}[0-9]{8}$" required title="Saisissez votre numero de téléphone"><br><br>
+            <input class="envoyer" type="submit" value="Envoyer">
+        </div>
+    </form>
+    <footer>
+        <div class="contact">
+            <div class="icon">
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                    <p>GITHUB</P>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="#">
+                    <i class="fa-brands fa-gitlab"></i>
+                    <p>GITLAB</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
