@@ -1,64 +1,264 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONT-AWSOME CDN LINK  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Formulaire</title>
-</head>
-<body>
-    <header> 
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">nav1</a></li>
-                <li><a href="#">nav2</a></li>
-                <li><a href="#">nav3</a></li>
-                <li><a href="#">nav4</a></li>
+  </head>
+  <body class="bg-light">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <div class="navbar-collapse">
+            <a class="navbar-brand me-auto" href="#">
+              <img src="./image/icon.png" alt="" width="30" height="30" />
+            </a>
+            <ul class="navbar-nav nav-fill d-flex">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lien 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lien 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lien 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lien 4</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
-    <form action="">
-        <h3> FORMULAIRE</h3>
-        <div class="formulaire">
-            <label for="nom">Nom</label>
-            <input type="text" name="nom" id="nom" required title="Saisissez votre nom"><br><br>
-            <label for="prenom">Prenom</label>
-            <input type="text" name="prenom" id="prenom" required title="Saisissez votre prenom"><br><br>
-            <label for="naissance">Date de Naisssance</label>
-            <input type="date" name="naissance" id="naissance" min="1900-01-01" max="2021-12-31" required title="Selectionner votre année de naissance"><br><br>
-            <label for="adress">Adresse Postale</label>
-            <input type="text" name="adress" id="adress" required title="Saisissez votre adresse postale"><br><br>
-            <label for="ville">Ville</label>
-            <input type="text" name="ville" id="ville" required title="Saisissez votre ville"><br><br>
-            <label for="postale">Code Postal</label>
-            <input type="text" name="postale" id="postale" pattern="^\d{5}$" required title="Saisissez votre code postal"><br><br>
-            <label for="pays">Pays</label>
-            <input type="text" name="pays" id="pays" required title="Saisissez votre pays"><br><br>
-            <label for="mail">Email</label>
-            <input type="email" name="mail" id="mail" required title="Saisissez votre mail"><br><br>
-            <label for="phone">Telephone</label>
-            <input type="tel" name="phone" id="phone" pattern="^[0]{1}[6-7]{1}[0-9]{8}$" required title="Saisissez votre numero de téléphone"><br><br>
-            <input class="envoyer" type="submit" value="Envoyer">
-        </div>
+    <form action="" style="width: 70%; margin: auto">
+      <h3
+        class="text-secondary"
+        style="
+          text-align: center;
+          font-size: 2.5rem;
+          font-family: cursive;
+          margin: 50px;
+        "
+      >
+        FORMULAIRE
+      </h3>
+      <div class="formulaire" style="margin-bottom: 50px">
+        <label for="nom">Nom:</label>
+        <input
+          type="text"
+          name="nom"
+          id="nom"
+          required
+          title="Saisissez votre nom"
+        /><br /><br />
+        <label for="prenom">Prenom:</label>
+        <input
+          type="text"
+          name="prenom"
+          id="prenom"
+          required
+          title="Saisissez votre prenom"
+        /><br /><br />
+        <label for="naissance">Date de Naisssance:</label>
+        <input
+          type="date"
+          name="naissance"
+          id="naissance"
+          min="1900-01-01"
+          max="2021-12-31"
+          required
+          title="Selectionner votre année de naissance"
+        /><br /><br />
+        <label for="adress">Adresse Postale:</label>
+        <input
+          type="text"
+          name="adress"
+          id="adress"
+          required
+          title="Saisissez votre adresse postale"
+        /><br /><br />
+        <label for="ville">Ville:</label>
+        <input
+          type="text"
+          name="ville"
+          id="ville"
+          required
+          title="Saisissez votre ville"
+        /><br /><br />
+        <label for="postale">Code Postal:</label>
+        <input
+          type="text"
+          name="postale"
+          id="postale"
+          pattern="^\d{5}$"
+          required
+          title="Saisissez votre code postal"
+        /><br /><br />
+        <label for="pays">Pays:</label>
+        <input
+          type="text"
+          name="pays"
+          id="pays"
+          required
+          title="Saisissez votre pays"
+        /><br /><br />
+        <label for="mail">Email:</label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          required
+          title="Saisissez votre mail"
+        /><br /><br />
+        <label for="phone">Telephone:</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          pattern="^[0]{1}[6-7]{1}[0-9]{8}$"
+          required
+          title="Saisissez votre numero de téléphone"
+        /><br /><br />
+        <input
+          class="envoyer"
+          type="submit"
+          value="Envoyer"
+          style="margin-bottom: 30px"
+        />
+      </div>
     </form>
-    <footer>
-        <div class="contact">
-            <div class="icon">
-                <a href="#">
-                    <i class="fa-brands fa-github"></i>
-                    <p>GITHUB</P>
-                </a>
-            </div>
-            <div class="icon">
-                <a href="#">
-                    <i class="fa-brands fa-gitlab"></i>
-                    <p>GITLAB</p>
-                </a>
-            </div>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="true"
+      style="margin-bottom: 80px"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div
+        class="carousel-inner"
+        style="width: 70%; margin: auto; border-radius: 8px"
+      >
+        <div class="carousel-item active">
+          <img src="./image/car1.jpg" class="d-block w-100" alt="icon" />
         </div>
+        <div class="carousel-item">
+          <img src="./image/car2.jpeg" class="d-block w-100" alt="icon" />
+        </div>
+        <div class="carousel-item">
+          <img src="./image/car3.jpg" class="d-block w-100" alt="icon" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+        style="margin-left: 200px"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+        style="margin-right: 200px"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <footer>
+      <h3
+        class="text-secondary"
+        style="
+          font-family: cursive;
+          font-size: 2.5rem;
+          width: 70%;
+          margin: auto;
+          text-align: center;
+          padding-bottom: 20px;
+        "
+      >
+        CONTACT
+      </h3>
+      <div class="row" style="width: 70%; margin: auto">
+        <div class="col-sm-6" style="text-align: center">
+          <div class="card bg-light" style="border: none">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Special title treatment</h5> -->
+              <i class="fa-brands fa-github" style="font-size: 2rem"></i>
+              <p class="card-text">GITHUB</p>
+              <a href="#" class="btn btn-secondary">Voir projets</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" style="text-align: center">
+          <div class="card bg-light" style="border: none">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Special title treatment</h5> -->
+              <i class="fa-brands fa-gitlab" style="font-size: 2rem"></i>
+              <p class="card-text">GITLAB</p>
+              <a href="#" class="btn btn-secondary">Voir projets</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
